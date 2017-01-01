@@ -9,8 +9,6 @@ class Interceptr {
     private server: any;
     private io: any;
 
-    public Option: any = Option;
-
     private static instance: Interceptr;
 
     constructor() {
@@ -64,7 +62,7 @@ class Interceptr {
         s.on("fbWebhook", (message: any) => {
             console.log("fb webhook Message: " + message);
             request({
-                url: "http://localhost:3000/",
+                url: this.options.local_host + ":" + this.options.local_port + "/" + message.endpoint,
                 method: 'POST',
                 json: message.body
 
@@ -99,7 +97,6 @@ class Interceptr {
 
 export const interceptr = (app: any, options: Option): any => {
     const socket = socketIoClient(options.remote_host + ":" + options.remote_port);
-    this.Option = Interceptr.getInstance().Option;
     socket.on("connected", (m: any) => {
         console.log("connected to " + options.remote_port);
         console.log(JSON.stringify(m));
