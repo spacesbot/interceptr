@@ -104,3 +104,5 @@ export const interceptr = (app: any, options: Option): any => {
     });
     return Interceptr.getInstance().configure(app, options, socket);
 } 
+
+export { Option } from "./common/models/option";
