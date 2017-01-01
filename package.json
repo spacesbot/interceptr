@@ -1,0 +1,28 @@
+{
+  "name": "interceptr",
+  "version": "0.0.1",
+  "description": "A Facebook Messenger(tm) express middleware for develop/debug locally ",
+  "files": [
+    "lib"
+  ],
+  "main": "lib/app.js",
+  "types": "./lib/app.d.ts",
+  "scripts": {
+    "clean": "rimraf lib",
+    "build": "npm run clean && npm run && echo Using TypeScript && tsc --version && tsc",
+    "watch": "npm run build -- --watch",
+    "start": "npm run build && node ./lib/index.js"
+  },
+  "dependencies": {
+    "socket.io": "^1.4.2",
+    "socket.io-client": "1.7.2"
+  },
+  "devDependencies": {
+    "@types/node": "^6.0.55",
+    "rimraf": "^2.5.4",
+    "ts-node": "^1.2.2",
+    "typescript": "2.0.10"
+  },
+  "author": "Gabriel Gutierrez (gaby)",
+  "license": "ISC"
+}

@@ -1,0 +1,1 @@
+{"version":3,"file":"option.js","sourceRoot":"","sources":["../../../src/common/models/option.ts"],"names":[],"mappings":";AAAA;IAMI,YAAY,WAAmB,EAAE,WAAmB,EAAE,QAAgB,EAAE,MAAc;QAClF,IAAI,CAAC,WAAW,GAAG,WAAW,CAAC;QAC/B,IAAI,CAAC,WAAW,GAAG,WAAW,CAAC;QAC/B,IAAI,CAAC,QAAQ,GAAG,QAAQ,CAAC;QACzB,IAAI,CAAC,MAAM,GAAG,MAAM,CAAC;IACzB,CAAC;AACL,CAAC;AAZY,cAAM,SAYlB,CAAA"}
