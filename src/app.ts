@@ -9,6 +9,7 @@ class Interceptr {
     private server: any;
     private io: any;
 
+    public Option: any = Option;
 
     private static instance: Interceptr;
 
@@ -104,5 +105,3 @@ export const interceptr = (app: any, options: Option): any => {
     });
     return Interceptr.getInstance().configure(app, options, socket);
 } 
-
-export { Option } from "./common/models/option";
