@@ -96,7 +96,7 @@ class Interceptr {
 }
 
 export const interceptr = (app: any, options: Option): any => {
-    const socket = socketIoClient(options.remote_host + ":" + options.remote_port);
+    const socket = socketIoClient(options.remote_host + options.remote_port ? ":" + options.remote_port : "");
     socket.on("connected", (m: any) => {
         console.log("connected to " + options.remote_port);
         console.log(JSON.stringify(m));
