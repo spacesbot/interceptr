@@ -39,7 +39,7 @@ class Interceptr {
    
     // Send message
     private sendFbWebook(webhook: any): void {
-        this.io.to("myroom").emit("fbWebhook", webhook.body);
+        this.io.to("myroom").emit("fbWebhook", webhook);
     }
 
     // Configure sockets
