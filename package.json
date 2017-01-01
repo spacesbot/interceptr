@@ -6,7 +6,7 @@
     "lib"
   ],
   "main": "lib/app.js",
-  "types": "./lib/**/*.d.ts",
+  "types": "./lib/app.d.ts",
   "scripts": {
     "clean": "rimraf lib",
     "build": "npm run clean && npm run && echo Using TypeScript && tsc --version && tsc",
